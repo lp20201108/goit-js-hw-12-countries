@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.komar.de/en/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/4/-/4-050_worldmap_neu_ma_1.jpg");
+}
+
+input {
+  height: 50px;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  font-size: 20px;
+  padding: 18px;
+  border: 1px solid rgb(211, 144, 144);
+  box-shadow: 0 0 10px #e77d7d;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7fc476a8;
+  box-shadow: 0 0 5px #18af39;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.container {
+  display: block;
+  margin: 50px;
+  background-color: rgba(255, 235, 205, 0.692);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.country-name {
+  font-style: sans-serif;
+  list-style: square;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.description {
+  font-style: sans-serif;
+  font-weight: normal;
+  font-size: large;
+  display: inline-block;
+  margin-left: 20px;
+}
