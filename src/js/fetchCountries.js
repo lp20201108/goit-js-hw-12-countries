@@ -22,7 +22,7 @@ export default function fetchService(searchQuery) {
 
 function markup(data) {
   container.classList.add('visible');
-     if (data.length > 1 && data.length <= 10) {
+     if (data.length > 1 && data.length <= 10)  {
          console.log(data);
          container.innerHTML = countriesList(data);
      }
@@ -37,7 +37,7 @@ function markup(data) {
 function errorMessage() {
    container.classList.remove('visible');
   error({
-    text: 'Too may matches found. Please enter a more specific query.',
+    text: 'Too many matches found. Please enter a more specific query.',
     delay: 2000,
   });
 }

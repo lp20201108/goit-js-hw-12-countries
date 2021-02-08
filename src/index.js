@@ -1,5 +1,6 @@
 import './css/style.css';
 import _ from 'lodash';
+import '@pnotify/core/dist/BrightTheme.css';
 import fetchCountries from './js/fetchCountries.js';
 
 
@@ -13,3 +14,4 @@ input.addEventListener(
     fetchCountries(event.target.value);
   }, 500),
 );
+
