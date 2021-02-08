@@ -20,7 +20,8 @@ export default function fetchService(searchQuery) {
 }
 
 
- function markup(data) {
+function markup(data) {
+  container.classList.add('visible');
      if (data.length > 1 && data.length <= 10) {
          console.log(data);
          container.innerHTML = countriesList(data);
@@ -29,10 +30,12 @@ export default function fetchService(searchQuery) {
   else
       container.innerHTML = data.map(country =>
       countryResultMarkup(country),
-    );
+     );
+   
 }
 
 function errorMessage() {
+   container.classList.remove('visible');
   error({
     text: 'Too may matches found. Please enter a more specific query.',
     delay: 2000,
